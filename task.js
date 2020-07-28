@@ -9,8 +9,7 @@ modal1.classList.add('modal_active');
 
 for (let i = 0; i < close.length; i++ ) {
     close[i].onclick = function() {
-        modal1.classList.remove('modal_active');
-        modal2.classList.remove('modal_active');
+        this.closest('div[id]').classList.remove('modal_active');
     }
 }
 
